@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/fhk7boj.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="header-container">
+      <header class="header">Library</header>
+      <p class="book-count">0 books in library.</p>
+    </div>
+    <form id="input-card" class="input-card">
+      <h1 class="input-card-heading">Add book to library:</h1>
+      <div class="input-book-title">
+        <label for="title">Title</label>
+        <input type="text" name="title" class="book title" id="title" />
+      </div>
+      <div class="input-book-author">
+        <label for="author">Author</label>
+        <input type="text" name="author" class="book author" id="author" />
+      </div>
+      <div class="input-book-pages">
+        <label for="pages">Pages</label>
+        <input type="number" name="pages" class="book pages" id="pages" />
+      </div>
+      <div class="input-book-read">
+        <label for="read">Read?</label>
+        <input type="checkbox" name="read" id="read" />
+      </div>
+      <button id="submit">Add book</button>
+      <p class="empty">Empty library</p>
+    </form>
+
+    <div class="books-display"></div>
+  </body>
+</html>
